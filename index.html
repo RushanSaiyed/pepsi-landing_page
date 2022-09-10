@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Start Page -->
+    <section class="main">
+        <div class="container">
+
+            <!-- Start Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">What's New</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Newsletter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+
+            <!-- Start Content -->
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="text-box">
+                            <h2>That's What<br> <span>I like</span> </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis officia quia vero cupiditate repudiandae, aut natus similique minima mollitia accusantium asperiores voluptatum. Nisi illum veritatis aperiam, quod dolore beatae sit.</p>
+                            <a href="https://www.pepsi.com/#!products" class="btn view-btn">View All Products</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="img-box">
+                            <img src="./images/pepsi001.png" class="img-fluid pepsi" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+
+        </div>
+
+        <div class="ico">
+            <a href=""><i class="fa-brands fa-facebook-f"></i><br></a>
+           <a href=""> <i class="fa-brands fa-twitter"></i><br></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        
+        <ul class="thumb">
+            <li><img src="./images/pepsi001.png" onclick="imgSlider('./images/pepsi001.png'); changeBg('#0062be')" alt=""></li>
+            <li><img src="./images/pepsi002.png" onclick="imgSlider('./images/pepsi002.png'); changeBg('#e60c2c')" alt=""></li>
+            <li><img src="./images/pepsi003.png" onclick="imgSlider('./images/pepsi003.png');changeBg('#1e1e1e')" alt=""></li>
+        </ul>
+
+    </section>
+    <!-- End Page -->
+
+    <script>
+        function imgSlider(anything){
+            console.log('ajufgb')
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBg(color) {
+            const sec = document.querySelector('.main');
+            sec.style.background = color;
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
